@@ -1,0 +1,22 @@
+{
+    "name": "meanapp",
+    "version": "1.0.0",
+    "description": "just a meanapp",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Erro: não especificado...\" && exit 1",
+        "start": "node app"
+    },
+    "dependencies": {
+        "express": "*",
+        "mongoose": "*",
+        "bcryptjs": "*",
+        "body-parser": "*",
+        "passport": "*",
+        "passport-jwt": "*",
+        "cors": "*",
+        "jsonwebtoken": "*"
+    },
+    "author": "David",
+    "license": "MIT"
+}
