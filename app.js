@@ -7,8 +7,13 @@ const mongoose = require ('mongoose');
 
 const app = express();
 const users = require('./routes/users');
-const port = 3000;
+const port = 8000;
 app.use(cors());
+app.get('/',(req,res)=>{
+
+res.send('Fim Invalido');
+
+});
 app.use(bodyParser.json);
 app.use('/users',users);
 
