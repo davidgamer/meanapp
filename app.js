@@ -37,7 +37,9 @@ app.get('/', (req, res) => {
     res.send('Fim Invalido');
 
 });
-app.use(bodyParser.json());
+app.use(bodyParser.json())
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/users', users);
 
