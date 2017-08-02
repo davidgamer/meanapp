@@ -19,5 +19,5 @@ app.use('/users',users);
 
 
 app.listen(port, () => {
-    console.log('Servidor na porta :::: '+ port)
+    console.log('Servidor na porta :: '+ port)
 });
