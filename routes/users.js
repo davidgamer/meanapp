@@ -1,5 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const passport = require('passport');
+const jwt = require('jsonwebtoken');
+
+
+const User = require('../model/user');
 
 
 
@@ -7,12 +12,31 @@ const router = express.Router();
 //registrar
 
 
-router.get('/registro',(req,res,next)=>{
+router.post('/registro', (req, res, next) => {
 
-res.send('Registro');
+    let newUser = new User({
+        name: req.body.name,
+        email: req.body.email,
+        username: req.body.username,
+        password: req.body.password
+    });
 
 
+    User.addUser(newUser, (err, user) => {
+        if (err) {
+            res.json({ succsess: false, msg: 'Falha ao registrar usuario' });
+        } else {
+            res.json({ succsess: true, msg: 'Registrado com sucesso!!!!' });
+        }
+
+    });
 });
+
+router.post('/auth', (req, res, next) => {
+
+    res.send('Profile');
+});
+
 
 
 module.exports = router;
