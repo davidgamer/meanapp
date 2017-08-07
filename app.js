@@ -9,7 +9,6 @@ const config = require('./config/database');
 
 mongoose.connect(config.database);
 
-//mongoose.connect('mongodb://localhost/myapp');
 
 mongoose.connection.on('conectado', () => {
     console.log('Conectado ao Mongodb' + config.database);
