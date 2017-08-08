@@ -1,22 +1,23 @@
 {
-    "name": "meanapp",
-    "version": "1.0.0",
-    "description": "just a meanapp",
-    "main": "app.js",
-    "scripts": {
-        "test": "echo \"Erro: não especificado...\" && exit 1",
-        "start": "node app"
-    },
-    "dependencies": {
-        "express": "*",
-        "mongoose": "*",
-        "bcryptjs": "*",
-        "body-parser": "*",
-        "passport": "*",
-        "passport-jwt": "*",
-        "cors": "*",
-        "jsonwebtoken": "*"
-    },
-    "author": "David",
-    "license": "MIT"
+  "name": "meanapp",
+  "version": "1.0.0",
+  "description": "just a meanapp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Erro: não especificado...\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "angular2-flash-messages": "^1.0.8",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "David",
+  "license": "MIT"
 }
