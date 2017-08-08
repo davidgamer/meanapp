@@ -30,7 +30,7 @@ password: String;
 
     if(!this.validateService.validateRegister(user)){
          this.flashMessage.show("Preencha os campos por favor", {cssClass:'alert-danger', timeout: 2000});
-     
+      
     }
 
       if(!this.validateService.validateEmail(user.email)){
