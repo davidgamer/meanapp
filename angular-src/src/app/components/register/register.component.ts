@@ -42,8 +42,8 @@ export class RegisterComponent implements OnInit {
 
     this.authService.registerUser(user).subscribe(data =>{
 
-      if(data.succsess){
-        this.flashMessage.show('Usuario cadastrado', {cssClass: 'alert-succsess', timeout: 3000});
+      if(data.success){
+        this.flashMessage.show('Usuario cadastrado', {cssClass: 'alert-success', timeout: 3000});
         this.router.navigate(['/login']);
       }else{
            this.flashMessage.show('Usuario não cadastrado', {cssClass: 'alert-danger', timeout: 3000});
