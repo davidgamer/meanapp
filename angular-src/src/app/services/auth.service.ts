@@ -30,4 +30,10 @@ storeUserData(token, user){
   this.user = user;
 }
 
+logout(){
+  this.authtoken =  null;
+  this.user = null;
+  localStorage.clear();
+}
+
 }
